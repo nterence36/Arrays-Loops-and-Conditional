@@ -23,17 +23,17 @@
 // If a number is divisible by 5 log "Buzz" instead of the number.
 // If a number is divisible by 3 and 5 log "FizzBuzz" instead of the number.
 
-for (let k = 1; k <= 100; k++){
-    if(k % 3  === 0 && k % 5 === 0){
-        console.log("FizzBuzz" )
-    }else if(k % 3 === 0){
-        console.log("Fizz")
-    }else if (k % 5 === 0){
-        console.log("BUZZ")
-    }else{
-        console.log(k)
-    }
-}
+// for (let k = 1; k <= 100; k++){
+//     if(k % 3  === 0 && k % 5 === 0){
+//         console.log("FizzBuzz" )
+//     }else if(k % 3 === 0){
+//         console.log("Fizz")
+//     }else if (k % 5 === 0){
+//         console.log("BUZZ")
+//     }else{
+//         console.log(k)
+//     }
+// }
 
 // Wild Wild Life
 // Use the following arrays to answer the questions below (name,species ,age, hometown): You should be modifying the elements by accessing them. It is up to you which methods to use.
@@ -58,3 +58,12 @@ console.log(dart)
 // Porgee decides that Wolfy can't be named "Wolfy" anymore. Remove "Wolfy" from the wolfyarray and replace it with "Gameboy".
 wolfy[0] = "Gameboy";
 console.log(wolfy)
+
+// Yell at the Ninja Turtles
+// Create an array with the members of the ninja turtles (Donatello, Leonardo, Raphael, Michaelangelo)
+// Use a for of loop(not a typo - try it out! Try a for ofloop) to call toUpperCase()on each of them and print out the result.
+const ninjaTurtles = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo'];
+
+for (let elementToUpperCase of ninjaTurtles){
+    console.log(elementToUpperCase.toUpperCase())
+}
