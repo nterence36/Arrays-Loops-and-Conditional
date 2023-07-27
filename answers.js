@@ -123,3 +123,20 @@ console.log(sliceArr.indexOf("Fast and Furious"))
 
 //Thought question: that we declared the variable favMovieswith const, and yet, we were allowed to change the array. Weird? Should we have used let?
 // const will work very well here since we are not reassigning but mutating. Let will work best when we are reassigning.
+
+// Where is Waldo
+// With the following multi-dimensional array
+const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
+                    ["Lucinda", "Jacc", "Neff", "Snoop"],
+                    ["Petunia", ["Baked Goods", "Waldo"]]];
+
+// Remove Eggbert (hint look at the slice/splice method(s))
+whereIsWaldo.splice(1, 1)
+console.log(whereIsWaldo)
+
+// Change "Neff" to "No One"
+whereIsWaldo[1][2] = "No One";
+console.log(whereIsWaldo)
+
+// Access and console.log "Waldo"
+console.log(whereIsWaldo[2][1][1]);
