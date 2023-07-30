@@ -140,3 +140,28 @@ console.log(whereIsWaldo)
 
 // Access and console.log "Waldo"
 console.log(whereIsWaldo[2][1][1]);
+
+// Excited Kitten
+// Write code that logs "Love me, pet me! HSSSSSS!" 20 times.
+// For every even number in your loop, log "...human...why you taking pictures of me?...", "...the catnip made me do it...", or "...why does the red dot always get away..." at random.
+
+
+// Find the Median
+// Find the median number in the following numsarray, then console.log that number.
+// hint if you check the length of the array / 2, you might get not get a whole number. In which case, look into Math.floor( // something )
+const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
+
+let newNums = nums.sort()
+function median(){
+    for (let l = 0; l < nums.length; l++){
+    let u = Math.floor(nums.length/2)
+    if (nums.length % 2 === 0){
+        return nums[u]
+    }else if(nums.length % 2 != 0){
+        return Math.floor((nums[u - 1] + nums[u])/2)
+    }
+    
+    }
+
+}
+console.log(median())
